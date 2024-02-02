@@ -1,0 +1,104 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500;600&family=Fira+Sans+Condensed:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,500&family=Fira+Sans:wght@100;200;400;500;600;700&family=Noto+Sans:ital,wght@0,100;0,300;0,500;0,600;0,700;1,300&family=Noto+Serif+Old+Uyghur&family=Poppins:wght@200;300;400;500;600;700;800&family=VT323&display=swap');
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 2px;
+  height: 2px;
+  
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #c00000;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #c00000;
+}
+
+
+body {
+  height: auto;
+  width: 100%;
+  background-color: #fff;
+  color: #3A4D39;
+  font-family: 'Poppins', -apple-system, BlinkMacSystemFont,
+    "Segoe UI", system-ui, Roboto, Oxygen-Sans, Ubuntu, Cantarell,
+    "Helvetica Neue", sans-serif;
+}
+
+.swiper {
+  width: 100%;
+  height: auto;
+  position: relative;
+}
+
+.logo {
+  font-family: 'Poppins';
+}
+
+
+.swiper-pagination {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+}
+
+.swiper-pagination-bullet {
+  /* margin-top: 30px; */
+  background-color: #c00000;
+}
+
+
+/* Colors */
+/* Base: #ECE3CE */
+/* Dark primary bg Text: #3A4D39 */
+/* Contrast Text: #F58634 */
+/* Dark secondary bg Text: #4F6F52 */
+/* Shades: #739072 */
+/* Dark BG: #068FFF */
+
+
+@media (max-width: 600px) {
+
+  /* width */
+  ::-webkit-scrollbar {
+    width: 1px;
+  }
+
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #097ec6;
+    border-radius: 10px;
+  }
+
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #c00000;
+  }
+
+}

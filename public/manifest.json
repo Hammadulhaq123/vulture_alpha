@@ -1,0 +1,44 @@
+{
+  "name": "Qwix. | Your one stop solution for smooth and fast shopping experience.",
+  "short_name": "Qwix.",
+  "start_url": "https://qms-three.vercel.app/",
+  "display": "standalone",
+  "background_color": "#000",
+  "theme_color": "#000",
+  "icons": [
+    {
+      "src": "./logo48.png",
+      "sizes": "48x48",
+      "type": "image/png"
+    },
+    {
+      "src": "./logo64.png",
+      "sizes": "64x64",
+      "type": "image/png"
+    },
+    {
+      "src": "./logo128.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "./logo256.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "./logo500.png",
+      "sizes": "500x500",
+      "type": "image/png"
+    }
+  ],
+  "description": "Install Qwix. to make your shopping experience Quick.",
+  "categories": ["queue-management", "ecommerce"],
+  "screenshots": [
+    {
+      "src": "./logo256.png",
+      "type": "image/png",
+      "sizes": "256x256"
+    }
+  ]
+}

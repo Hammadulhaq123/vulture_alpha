@@ -1,0 +1,47 @@
+.preload-animate {
+    animation: preload 1s cubic-bezier(0.97, 0.01, 0.36, 0.99) 0.8s forwards;
+}
+
+@keyframes preload {
+    0% {
+        height: 100vh;
+    }
+
+    40% {
+        height: 100vh;
+    }
+
+    60% {
+        opacity: 0.8;
+    }
+
+    80% {
+        opacity: 0.3;
+    }
+
+    100% {
+        height: 0vh;
+        opacity: 0;
+    }
+}
+
+.swiper-slide {
+    width: 100%;
+    height: auto;
+}
+
+.textbox {
+    text-align: left;
+    font-size: 18px;
+    background: #000;
+    width: 100%;
+    height: 34rem;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
