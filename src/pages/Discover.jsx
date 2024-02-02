@@ -23,11 +23,11 @@ const Discover = () => {
                 </div>
             }
 
-
+            <div className='w-full h-56 p-4 bg-[#000] rounded-2xl'>
+                <Graph />
+            </div>
 
             <div className='relative  w-full p-2 sm:p-0  h-auto flex flex-col gap-4'>
-
-                <Graph />
                 <UserContainer title="Users" url="https://fakestoreapi.com/products" />
                 <CelebsContainer title="Celebrities" url="https://fakestoreapi.com/products" />
 
