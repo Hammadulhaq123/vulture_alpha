@@ -1,6 +1,7 @@
 import Celebrities from "../pages/Celebrities"
 import Chats from "../pages/Chats"
 import Discover from "../pages/Discover"
+import Notification from "../pages/Notification"
 import Users from "../pages/Users"
 
 
@@ -21,9 +22,14 @@ const routes = [
         'page': <Celebrities />
     },
     {
-        'title': 'Chats',
+        'title': 'Groups & Chats',
         'to': '/chats/',
         'page': <Chats />
+    },
+    {
+        'title': 'Notifications',
+        'to': '/notifications/',
+        'page': <Notification />
     },
 
     

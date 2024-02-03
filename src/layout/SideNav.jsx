@@ -9,6 +9,7 @@ import { IoIosLogOut } from "react-icons/io";
 import { IoIosStar } from "react-icons/io";
 import { HiUsers } from "react-icons/hi2";
 import { MdGroups2 } from "react-icons/md";
+import { FaBell } from 'react-icons/fa'
 
 
 const SideNav = () => {
@@ -39,7 +40,7 @@ const SideNav = () => {
                         
                         <li>
                             <Link to="/dashboard/" className="flex items-center p-2 text-gray-300 text-sm rounded-lg  group">
-                                <MdOutlineDashboard className='text-2xl group-hover:text-[#c00000]' />
+                                <MdOutlineDashboard className='text-xl group-hover:text-[#c00000]' />
                                 <span className="ms-3 group-hover:text-[#c00000]  ">Dashboard</span>
                                 
                             </Link>
@@ -47,7 +48,7 @@ const SideNav = () => {
 
                         <li>
                             <Link to="/users/" className="flex items-center p-2 text-gray-300 text-sm rounded-lg  group">
-                                <HiUsers className='text-2xl group-hover:text-[#c00000]' />
+                                <HiUsers className='text-xl group-hover:text-[#c00000]' />
                                 <span className="ms-3 group-hover:text-[#c00000]  ">Users</span>
                                 
                             </Link>
@@ -55,7 +56,7 @@ const SideNav = () => {
 
                         <li>
                             <Link to="/celebrities/" className="flex items-center p-2 text-gray-300 text-sm rounded-lg  group">
-                                <IoIosStar className='text-2xl group-hover:text-[#c00000]' />
+                                <IoIosStar className='text-xl group-hover:text-[#c00000]' />
                                 <span className="ms-3 group-hover:text-[#c00000]  ">Celebrities</span>
                                 
                             </Link>
@@ -63,8 +64,16 @@ const SideNav = () => {
 
                         <li>
                             <Link to="/chats/" className="flex items-center p-2 text-gray-300 text-sm rounded-lg  group">
-                                <MdGroups2 className='text-2xl group-hover:text-[#c00000]' />
+                                <MdGroups2 className='text-xl group-hover:text-[#c00000]' />
                                 <span className="ms-3 group-hover:text-[#c00000]  ">Group Chats</span>
+                                
+                            </Link>
+                        </li>
+
+                        <li>
+                            <Link to="/notifications/" className="flex items-center p-2 text-gray-300 text-sm rounded-lg  group">
+                                <FaBell className='text-lg group-hover:text-[#c00000]' />
+                                <span className="ms-3 group-hover:text-[#c00000]  ">Notifications</span>
                                 
                             </Link>
                         </li>
@@ -72,7 +81,7 @@ const SideNav = () => {
                         <li>
                             <button type='button' onClick={signOut} className="flex items-center p-2 text-gray-300 text-sm rounded-lg group">
 
-                                <IoIosLogOut className='text-2xl group-hover:text-[#c00000]' />
+                                <IoIosLogOut className='text-xl group-hover:text-[#c00000]' />
                                 <span className="flex-1 ms-3 whitespace-nowrap group-hover:text-[#c00000]">Signout</span>
 
                             </button>

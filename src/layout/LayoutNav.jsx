@@ -21,11 +21,14 @@ const LayoutNav = ({ title }) => {
 
 
 
-                <Link to="/discover/" className="text-2xl text-[#fff] font-bold whitespace-nowrap">{title}</Link>
+                <span className="text-2xl text-[#fff] font-bold whitespace-nowrap">{title}</span>
 
                 <div className="flex items-center gap-2 ">
-                    <button className='w-8 h-8 rounded-lg flex items-center justify-center text-sm text-white focus-within:ring-2 focus-within:ring-red-500 bg-[#c00000]'>
-                        <FaPlus />
+                    <button className='group transition-all duration-150 w-auto px-2 h-8 rounded-lg flex items-center justify-center text-sm text-white focus-within:ring-2 focus-within:ring-red-500 bg-[#c00000]'>
+                        <FaPlus className='group-hover:mr-2 '/>
+                        <span className='text-sm transition-all duration-150 group-hover:block hidden'>
+                            Add Celebrity
+                        </span>
                     </button>
 
                     <Link to='#' className="flex text-sm bg-gray-800 rounded-full md:me-0 focus:ring-4 focus:ring-gray-300">
