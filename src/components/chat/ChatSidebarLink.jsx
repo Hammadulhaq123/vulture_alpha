@@ -1,7 +1,7 @@
 import React from 'react'
 import { MdDelete } from "react-icons/md";
 
-const ChatSidebarLink = () => {
+const ChatSidebarLink = ({setIsOpen}) => {
     return (
         <div className='w-full bg-[#0e0e10] transition-all duration-150 cursor-pointer flex justify-between items-center gap-2 hover:bg-[#0e0e10]/[0.9] h-16 rounded-lg p-3'>
             <div className='w-auto flex justify-start items-center gap-3'>
@@ -21,7 +21,7 @@ const ChatSidebarLink = () => {
                 </div>
             </div>
 
-            <button className='w-6 h-6 flex justify-center items-center'>
+            <button onClick={() => setIsOpen(true)} className='w-6 h-6 flex justify-center items-center'>
                 <MdDelete className='text-xl text-red-600' />
             </button>
         </div>
