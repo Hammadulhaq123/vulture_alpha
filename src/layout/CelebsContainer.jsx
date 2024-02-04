@@ -5,8 +5,8 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { Link } from 'react-router-dom';
 import { MdArrowOutward } from "react-icons/md";
-import ProductSkeleton from '../components/ProductSkeleton';
 import DashCelebCard from '../components/dashboard/DashCelebCard';
+import CelebSkeleton from '../components/CelebSkeleton';
 
 
 const CelebsContainer = ({ title, url }) => {
@@ -56,7 +56,7 @@ const CelebsContainer = ({ title, url }) => {
             </div >
             {
                 loading ?
-                    <ProductSkeleton /> :
+                    <CelebSkeleton /> :
                     <Swiper
                         slidesPerView={window.innerWidth < 800 ? 2 : window.innerWidth < 1100 ? 3 : 4}
                         spaceBetween={10}
