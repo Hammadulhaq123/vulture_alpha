@@ -2,7 +2,7 @@ import React, { useState, useEffect } from 'react'
 import { BsArrowLeftShort } from "react-icons/bs"
 import { Link, useNavigate } from 'react-router-dom'
 import { IoPersonCircleSharp } from 'react-icons/io5'
-import { Baskets, Google, RegisterBanner } from '../assets/exports';
+import { Baskets, Google, LoginLogo, RegisterBanner } from '../assets/exports';
 import axiosInstance from '../../axios';
 
 const Register = () => {
@@ -57,6 +57,11 @@ const Register = () => {
                 </Link>
 
                 <div className='flex w-full h-auto flex-col px-4 justify-start items-start gap-4'>
+
+                <div className='h-auto flex items-center mb-8 justify-center w-full'>
+                    <img src={LoginLogo} className='h-32'/>
+                    </div>
+
                     <div className='w-full flex flex-col items-center text-center gap-1'>
                         <h1 className='text-3xl text-[#c00000] font-bold'>Let's Get Started !</h1>
                         <p className='text-sm text-gray-300'>Create your own account</p>

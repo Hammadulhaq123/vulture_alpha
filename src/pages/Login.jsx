@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { BsArrowLeftShort } from "react-icons/bs"
-import { Baskets, Info, Google, LoginBanner, ShopEase } from '../assets/exports'
+import { Baskets, Info, Google, LoginBanner, LoginLogo } from '../assets/exports'
 import { Link, useNavigate } from 'react-router-dom'
 import axiosInstance from '../../axios'
 
@@ -31,8 +31,8 @@ const Login = () => {
                 </Link>
 
                 <div className='flex w-full h-auto flex-col px-4 justify-start relative items-start gap-4'>
-                    <div className='h-8 flex items-center mb-8 justify-center w-full'>
-                    <img src={ShopEase} className=''/>
+                    <div className='h-auto flex items-center mb-8 justify-center w-full'>
+                    <img src={LoginLogo} className='h-32'/>
                     </div>
 
                     <div className='w-full h-auto flex justify-center items-center'>

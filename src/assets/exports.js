@@ -9,6 +9,7 @@ import ShopEase from "../assets/shopease.svg"
 import Banner from '../assets/main_banner.png'
 import LoginBanner from "../assets/login.svg"
 import RegisterBanner from "../assets/register.svg"
+import LoginLogo from "../assets/loginlogo.png"
 
 
-export { GetStarted, Mobile, Store, QueueMgt, Baskets, Info, Google, ShopEase, Banner, LoginBanner, RegisterBanner }
+export { GetStarted, Mobile, Store, QueueMgt, Baskets, Info, Google, ShopEase, Banner, LoginBanner, RegisterBanner, LoginLogo }
