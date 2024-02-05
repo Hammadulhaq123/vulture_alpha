@@ -4,7 +4,7 @@ import { RiFacebookBoxFill, RiInstagramFill } from "react-icons/ri";
 import { TiSocialTwitter } from "react-icons/ti";
 import { BiImageAdd } from "react-icons/bi";
 
-const AddCelebrity = () => {
+const EditCelebrity = () => {
 
 
     return (
@@ -50,11 +50,11 @@ const AddCelebrity = () => {
 
 
             <button className='w-full h-12 bg-[#c00000] transition-all duration-150 hover:bg-[#c00000]/[0.9]  outline-none border-none text-white text-md font-medium'>
-                Add Celebrity
+                Update
             </button>
 
         </div>
     )
 }
 
-export default AddCelebrity
+export default EditCelebrity

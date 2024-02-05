@@ -3,7 +3,7 @@ import React from 'react'
 const NotificationTableRow = () => {
     return (
         <tr className="bg-[#1c1c1c] border-b border-gray-700">
-            <th scope="row" className="px-6 py-2 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+            <th scope="row" className="px-6 py-2 font-medium text-white whitespace-nowrap ">
                 Notification
             </th>
             <td className="px-6 py-2">

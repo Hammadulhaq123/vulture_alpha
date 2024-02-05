@@ -4,7 +4,7 @@ import { ShopEase } from '../../assets/exports'
 import { FaPlus } from 'react-icons/fa'
 import ChatSidebarLink from './ChatSidebarLink'
 import DeleteGroupModal from './DeleteGroupModal'
-import CreateGroupModal from './CreateGroupModal'
+import EditGroupModal from './EditGroupModal'
 
 const ChatSidebar = () => {
 
@@ -14,7 +14,8 @@ const ChatSidebar = () => {
     }
 
     const [isDeleteOpen, setIsDeleteOpen] = useState(false)
-    const [isCreateOpen, setIsCreateOpen] = useState(false)
+    const [isEditOpen, setIsEditOpen] = useState(false)
+
 
   return (
     <div id='chat-sidebar' className='fixed top-16 right-0 translate-x-96 transition-all flex flex-col items-center justify-start duration-150 w-80 h-[calc(100%-4rem)] bg-[#1c1c1c] shadow-sm shadow-[#c00000] p-2'>
@@ -22,27 +23,20 @@ const ChatSidebar = () => {
             <MdClose className='text-lg text-white' />
         </button>
 
-        <div className='h-[calc(100%-2rem)] w-full flex flex-col overflow-y-auto gap-1 justify-start items-start'>
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
-            <ChatSidebarLink setIsOpen={setIsDeleteOpen} />
+
+
+        <div className='h-[calc(100%)] w-full flex flex-col overflow-y-auto gap-1 justify-start items-start'>
+
+        <ChatSidebarLink setIsOpen={setIsDeleteOpen} setIsEditOpen={setIsEditOpen}/>
+        <ChatSidebarLink setIsOpen={setIsDeleteOpen} setIsEditOpen={setIsEditOpen}/>
+        <ChatSidebarLink setIsOpen={setIsDeleteOpen} setIsEditOpen={setIsEditOpen}/>
+        <ChatSidebarLink setIsOpen={setIsDeleteOpen} setIsEditOpen={setIsEditOpen}/>
+
         </div>
         
-        <button onClick={() => setIsCreateOpen(true)} className='w-[90%] h-8 rounded-md text-white text-sm bg-[#c00000] flex items-center justify-center '>
-            <FaPlus className='text-sm mr-2 text-white' />
-            Create New
-        </button>
 
         <DeleteGroupModal isOpen={isDeleteOpen} setIsOpen={setIsDeleteOpen}/>
-        <CreateGroupModal isOpen={isCreateOpen} setIsOpen={setIsCreateOpen}/>
+        <EditGroupModal isOpen={isEditOpen} setIsOpen={setIsEditOpen}/>
         
     </div>
   )

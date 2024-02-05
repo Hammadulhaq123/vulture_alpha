@@ -2,6 +2,7 @@ import AddCelebrity from "../pages/AddCelebrity"
 import Celebrities from "../pages/Celebrities"
 import Chats from "../pages/Chats"
 import Discover from "../pages/Discover"
+import EditCelebrity from "../pages/EditCelebrity"
 import Notification from "../pages/Notification"
 import Users from "../pages/Users"
 
@@ -36,6 +37,11 @@ const routes = [
         'title': 'Add Celebrity',
         'to': '/add-celebrity/',
         'page': <AddCelebrity />
+    },
+    {
+        'title': 'Edit Celebrity',
+        'to': '/edit-celebrity/',
+        'page': <EditCelebrity />
     },
 
     

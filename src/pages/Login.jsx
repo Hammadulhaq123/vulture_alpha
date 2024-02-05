@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from 'react'
 import { BsArrowLeftShort } from "react-icons/bs"
-import { Baskets, Info, Google, LoginBanner } from '../assets/exports'
+import { Baskets, Info, Google, LoginBanner, ShopEase } from '../assets/exports'
 import { Link, useNavigate } from 'react-router-dom'
 import axiosInstance from '../../axios'
 
@@ -30,7 +30,11 @@ const Login = () => {
                     <BsArrowLeftShort className='absolute top-6 left-4 text-[34px]' />
                 </Link>
 
-                <div className='flex w-full h-auto flex-col px-4 justify-start items-start gap-4'>
+                <div className='flex w-full h-auto flex-col px-4 justify-start relative items-start gap-4'>
+                    <div className='h-8 flex items-center mb-8 justify-center w-full'>
+                    <img src={ShopEase} className=''/>
+                    </div>
+
                     <div className='w-full h-auto flex justify-center items-center'>
                         <img src={Info} className="w-auto h-32 rounded-full" alt='' />
                     </div>
@@ -56,7 +60,7 @@ const Login = () => {
                             className='w-full select-none bg-[#c00000] text-white font-bold text-md border-none outline-none h-12 px-3 rounded-full  focus-within:border-blue-400 hover:shadow transition duration-150' >Login</button>
 
                     </form>
-                    
+
 
                 </div>
 

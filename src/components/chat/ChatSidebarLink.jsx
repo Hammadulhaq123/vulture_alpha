@@ -1,7 +1,8 @@
 import React from 'react'
 import { MdDelete } from "react-icons/md";
+import { MdEditSquare } from "react-icons/md";
 
-const ChatSidebarLink = ({setIsOpen}) => {
+const ChatSidebarLink = ({setIsOpen, setIsEditOpen}) => {
     return (
         <div className='w-full bg-[#0e0e10] transition-all duration-150 cursor-pointer flex justify-between items-center gap-2 hover:bg-[#0e0e10]/[0.9] h-16 rounded-lg p-3'>
             <div className='w-auto flex justify-start items-center gap-3'>
@@ -21,9 +22,18 @@ const ChatSidebarLink = ({setIsOpen}) => {
                 </div>
             </div>
 
+            <div className='w-auto flex justify-start items-center gap-[2px]'>
+
+            <button onClick={() => setIsEditOpen(true)} className='w-6 h-6 flex justify-center items-center'>
+                <MdEditSquare className='text-xl text-blue-600' />
+            </button>
+
             <button onClick={() => setIsOpen(true)} className='w-6 h-6 flex justify-center items-center'>
                 <MdDelete className='text-xl text-red-600' />
             </button>
+
+            </div>
+
         </div>
     )
 }
